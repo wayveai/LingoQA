@@ -8,7 +8,7 @@ Official GitHub repository for "LingoQA: Video Question Answering for Autonomous
 >
 >Ana-Maria Marcu, Long Chen, Jan Hünermann, Alice Karnsund, Benoit Hanotte, Prajwal Chidananda, Saurabh Nair, Vijay Badrinarayanan, Alex Kendall, Jamie Shotton, Oleg Sinavski
 >
->[[preprint]](https://github.com/wayveai/LingoQA/blob/main/assets/preprint.pdf)
+>[[preprint]](https://github.com/wayveai/LingoQA/blob/main/assets/preprint.pdf)[[arxiv]](https://arxiv.org/abs/2312.14115)
 
 
 The benchmark and dataset will be released soon.
