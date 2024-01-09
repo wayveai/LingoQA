@@ -38,6 +38,6 @@ class LingoJudge(nn.Module):
         scores = []
         for reference in references:
             score = self.forward(question, reference, prediction)
-            scores.append(score)
+            scores.extend(score)
         max_score = max(scores)
         return max_score
