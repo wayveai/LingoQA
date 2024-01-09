@@ -2,7 +2,7 @@ import torch
 from torch import nn
 
 from typing import List
-from transformers import AutoModel, AutoTokenizer
+from transformers import AutoModelForSequenceClassification, AutoTokenizer
 from constants import LINGO_JUDGE
 
 
@@ -14,8 +14,7 @@ class LingoJudge(nn.Module):
         super().__init__()
         self.tokenizer = AutoTokenizer.from_pretrained(pretrained_model, use_fast=True)
         #TODO: Update this with a single line once HF upload complete
-        self.model = AutoModel.from_pretrained(pretrained_model)
-        self.head = nn.Linear(self.model.config.hidden_size, 1)
+        self.model = AutoModelForSequenceClassification.from_pretrained(pretrained_model)
 
     def forward(self, question: str, reference: str, prediction: str):
         device = next(self.parameters()).device
@@ -23,8 +22,8 @@ class LingoJudge(nn.Module):
         encoded_input = self.tokenizer(text, return_tensors='pt', padding=True, truncation=True, max_length=128)
         encoded_input = {k: v.to(device) for k, v in encoded_input.items()}
         output = self.model(**encoded_input)
-        embedding = output.last_hidden_state[:, 0]
-        return self.head(embedding).squeeze(-1)
+
+        return output.logits.squeeze(-1)
 
     def compute(self, question: str, references: List[str], prediction: str):
         """

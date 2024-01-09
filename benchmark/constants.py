@@ -8,7 +8,7 @@ from enum import Enum
 LINGOQA_TEST = "http://172.24.42.122:8080/test_export/val.parquet"
 
 #TODO: Update this with the file name from Long
-LINGO_JUDGE = "microsoft/deberta-v3-base"
+LINGO_JUDGE = "wayveai/Lingo-Judge"
 
 class Keys(str, Enum):
     question_id = "question_id"
