@@ -8,11 +8,12 @@ from constants import LINGO_JUDGE
 
 class LingoJudge(nn.Module):
     """
-    LingoJudge is a textual classifier that evaluates the truthfulness of an answer.
+    LingoJudge is a textual classifier that evaluates the truthfulness of an answer on the LingoQA benchmark.
     """
     def __init__(self, pretrained_model=LINGO_JUDGE):
         super().__init__()
         self.tokenizer = AutoTokenizer.from_pretrained(pretrained_model, use_fast=True)
+        #TODO: Update this with a single line once HF upload complete
         self.model = AutoModel.from_pretrained(pretrained_model)
         self.head = nn.Linear(self.model.config.hidden_size, 1)
 
@@ -31,8 +32,8 @@ class LingoJudge(nn.Module):
 
         Args:
             question: The reference question on which model predictions were made.
-            prediction: A single model prediction.
             references: A list of one of more correct reference answers.
+            prediction: A single model prediction.
         """
         scores = []
         for reference in references:
