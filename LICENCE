@@ -1,0 +1,55 @@
+Wayve Dataset Licence Agreement for Non-Commercial Use (February 2024)
+
+The Dataset (as defined below) is being made available by Wayve Technologies Ltd, a company incorporated in England and Wales with company number 10924127 (“Wayve”) to you (“You”) under the terms and conditions below.
+
+By downloading or using the Dataset, You acknowledge that You have read these terms and conditions (“Terms"), understand them, and agree to be bound by the Terms. If Your institution or another entity exercises the rights granted under these Terms by virtue of Your download or use of the Dataset, You represent and warrant that: (a) You are authorised to agree to these Terms on behalf of the institution or other entity; or (b) You have confirmed that a person with authority to agree to these Terms on behalf of the institution or other entity has already so agreed on behalf of the institution or other entity. If You do not agree with the Terms or cannot warrant the above, You must not download and/or use the Dataset. 
+
+In these Terms, the following expressions shall have the following meanings:
+
+“Dataset" means Wayve’s LingoQA open dataset available at https://github.com/wayveai/LingoQA which has been developed and is owned by Wayve, and any computer code (whether in source or object code form) or other materials that may be made available by Wayve from time to time in conjunction with the dataset for the purposes of enabling You to benchmark or evaluate Your use of the dataset.
+
+“Derivative IP" means any derivative work of the Dataset, any other work made or developed using the Dataset, and any invention conceived or reduced to practice, directly or indirectly, through the use of the Dataset.
+
+“Intellectual Property Rights” means patents, rights in inventions, copyright and neighbouring and related rights, rights to use and protect the confidentiality of confidential information (including, but not limited to know-how and trade secrets), trade marks, goodwill, service marks, trade names, design rights, rights in get-up and trade dress, database rights, utility models, domain names, business names, rights in computer software, the right to sue for infringement, unfair competition and passing off, all similar rights of whatever nature wherever in the world arising, in each case, whether registered or not.
+
+“Non-commercial Use" means use for academic or scientific research, teaching, scientific publication relating to academic or applied research, or personal experimentation. Non-commercial Use expressly excludes purposes intended for or directed towards commercial advantage or monetary compensation, whether directly or indirectly through sales, advertising revenue, subscriptions, through promoting commercial activities or developing or providing goods or services.
+
+“Wayve" means Wayve Technologies Ltd, together with any and all of its affiliates from time to time.
+
+“You" means the individual, institution or other entity exercising the rights granted under these Terms.
+
+In consideration of Your agreement to and compliance with these Terms, Wayve grants to You a non-exclusive, non-transferrable, non-sublicensable, royalty-free, revocable, personal licence for the duration of these Terms to use the Dataset for Non-commercial Purposes only, subject to the following conditions:
+
+Ownership: Wayve retains all right, title, and interest in and to any Dataset provided to You under these Terms. Except as expressly set out in these Terms, no Intellectual Property Rights or other rights in the Dataset are granted, assigned or otherwise transferred to You under these Terms. 
+
+Attribution: You must provide the following attributions in any Derivative IP: “This work was made using the Wayve LingoQA dataset and benchmark, provided by Wayve Technologies Ltd under licence terms available at https://github.com/wayveai/LingoQA.” 
+
+Feedback: If You give feedback, ideas or suggestions about the Dataset to Wayve or another person or entity acting on Wayve’s behalf (“Feedback”), You acknowledge and agree that Wayve has the unrestricted right to use, share and commercialise Your Feedback in any way and for any purpose, including for commercial purposes. This clause survives the termination or revocation of these Terms for whatever reason.
+
+Compliance with law: You may not use the Dataset in any manner that violates applicable laws or regulations, including without limitation, applicable data protection laws.
+
+Additional restrictions: You agree (a) not to distribute or publish or otherwise make available any models trained on or refined using the Dataset, or the parameters from such trained models, in whole or in part unless such model and/or its parameters are being distributed or published on an academic or scientific basis and free of charge; and (b) not to use or deploy the Dataset, any models trained on or refined using the Dataset, or the parameters from such trained models, in whole or in part, (i) in operation of a vehicle or robot or to assist in the operation of a vehicle or robot, or (ii) for any high-risk purpose, including without limitation any use that risks damage to property, personal injury or death.
+
+Scope of licence: If You: (a) are concerned that Your intended use of the Dataset does not constitute Non-Commercial Use, or (b) would like to discuss a commercial licence, You must contact legal@wayve.ai and refrain from downloading or using the Dataset without Wayve’s prior written consent. Nothing in these Terms creates an obligation on Wayve to respond to such request or to grant you any commercial licence or other rights. 
+
+Limited non-assert: In consideration for access to this Dataset, You (also on behalf of Your successors and assignees of any rights protecting Your Derivative IP) (a) agree not to prepare, initiate, assert, or otherwise support any claim against Wayve or any of its affiliates, successors, or assignees, for infringement, misappropriation or other violation of any rights protecting Your Derivative IP, and (b) grant Wayve and the other parties in (a) above a worldwide and unrestricted licence to such rights, with such licence becoming effective only if You breach the obligations of (a).
+
+Disclaimer and limitation of liability: You acknowledge and agree the Dataset is provided “as-is" and without any express or implied warranty, including without limitation warranties of accuracy, completeness, reliability, title, merchantability, fitness for a particular purpose, and non-infringement. To the fullest extent permitted by law, in no event shall Wayve or its affiliates, partners, licensors, customers, employees or contractors be liable under any legal theory with respect to the Dataset or any Derivative IP (or any use thereof), or for any direct, indirect, consequential, exemplary, incidental, punitive, or special damages, lost profits, wasted expenditure, harm to reputation or loss of goodwill and/or loss of business or data (regardless of whether such liability arises in tort, contract or in any other way and whether or not caused by negligence or misrepresentation).
+
+Revocation of licence: The licence granted under these Terms may be revoked by Wayve in its sole discretion at any time by posting a notice of revocation on https://github.com/wayveai/LingoQA. 
+
+No updates: You understand and agree that Wayve is under no obligation to provide maintenance services, update services, notices of latent defects, or corrections of defects with regard to the Dataset. Wayve nevertheless reserves the right to update, modify, or discontinue the Dataset at any time.
+
+Termination for breach: If You fail to comply with these Terms, then any rights granted to You hereunder terminate automatically and You agree to remove access to and delete the Dataset.
+
+Indemnification: You shall fully indemnify and keep indemnified and hold Wayve harmless from and against any losses, claims, damages, liability, costs (including legal and other professional fees), fines and expenses incurred by Wayve as a result of or in connection with Your use of the Dataset or breach of these Terms.
+
+Assignment: You may not assign these Terms or any rights or obligations hereunder, except with Wayve’s express written consent. Any attempted assignment in violation of this section will be void. Wayve may assign its rights and obligations hereunder without written notice to You. 
+
+No partnership or agency: Nothing in these Terms constitutes, or shall be deemed to constitute, a partnership between the parties nor make any party the agent of another party.
+
+Severance: If any provision of these Terms (or part of any provision) is or becomes illegal, invalid or unenforceable but would be legal, valid and enforceable if some part of it was deleted or modified, the provision or part-provision in question shall apply with such deletions or modifications as may be necessary to make the provision legal, valid and enforceable.
+
+Waiver: No failure, delay or omission by Wayve in exercising any right, power or remedy provided by law or under these Terms shall operate as a waiver of that right, power or remedy, nor shall it preclude or restrict any future exercise of that or any other right or remedy.
+
+Governing law and jurisdiction: These Terms shall be governed by and construed in accordance with the laws of England. Any disputes arising from or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts of England and Wales.
