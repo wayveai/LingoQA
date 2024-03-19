@@ -21,7 +21,7 @@ In this repository you will find:
 
 ## 3-minute summary <a name="summary"></a> 
 
-[<img src="assets/thumbnail.png" width="100%">][https://www.canva.com/design/DAF-vlMT8vo/X7ynk_nv52t7jE7UpKlRBg/watch?utm_content=DAF-vlMT8vo&utm_campaign=designshare&utm_medium=link&utm_source=editor]
+[<img src="assets/video_thumbnail.png" width="100%">][https://www.canva.com/design/DAF-vlMT8vo/X7ynk_nv52t7jE7UpKlRBg/watch?utm_content=DAF-vlMT8vo&utm_campaign=designshare&utm_medium=link&utm_source=editor]
 
 ## Benchmark
 To run the LingoQA benchmark on your predictions, simply install the requirements for the repository:
