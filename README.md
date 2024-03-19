@@ -57,7 +57,7 @@ Lingo-Judge is an evaluation metric that aligns closely with human judgement on 
 from transformers import pipeline
 
 # Define the model name to be used in the pipeline
-model_name = 'Lingo-Judge'
+model_name = 'wayveai/Lingo-Judge'
 
 # Define the question and its corresponding answer and prediction
 question = "Are there any pedestrians crossing the road? If yes, how many?"
