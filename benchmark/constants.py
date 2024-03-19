@@ -5,7 +5,7 @@ This file provides the download link for the datasets, as well as reference keys
 from enum import Enum
 
 #TODO: Update this with actual datasets once uploaded on Google Drive
-LINGOQA_TEST = "http://172.24.42.122:8080/test_export/val.parquet"
+LINGOQA_TEST = "./val.parquet"
 
 #TODO: Update this with the file name from Long
 LINGO_JUDGE = "wayveai/Lingo-Judge"
