@@ -43,9 +43,9 @@ The LingoQA training and evaluation datasets contain:
 
 | Datset                    | Split  | Videos | QA Pairs | QA Per Scenario |            Link         |
 |---------------------------|--------|--------|----------|-----------------|-------------------------|
-| Scenery                   | Train  |  3.5k  |  267.8k  |     ~10.9       |   Link to be released   |
-| Action                    | Train  | 24.5k  |  152.5k  |     ~43.6       |   Link to be released   |
-| Evaluation                | Test   |   100  |   1000   |       10        |   Link to be released   |
+| Scenery                   | Train  |  3.5k  |  267.8k  |     ~10.9       |   https://drive.google.com/drive/folders/1ivYF2AYHxDQkX5h7-vo7AUDNkKuQz_fL/scenery   |
+| Action                    | Train  | 24.5k  |  152.5k  |     ~43.6       |   https://drive.google.com/drive/folders/1ivYF2AYHxDQkX5h7-vo7AUDNkKuQz_fL/action   |
+| Evaluation                | Test   |   100  |   1000   |       10        |   https://drive.google.com/drive/folders/1ivYF2AYHxDQkX5h7-vo7AUDNkKuQz_fL/evaluation   |
 
 
 ## Evaluation Metric <a name="dataset"></a> 

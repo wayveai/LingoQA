@@ -4,10 +4,9 @@ This file provides the download link for the datasets, as well as reference keys
 """
 from enum import Enum
 
-# Example path to test set, to be updated upon dataset release
-LINGOQA_TEST = "http://evaluation/test.parquet"
+LINGOQA_TEST = "https://drive.usercontent.google.com/u/1/uc?id=1I8u6uYysQUstoVYZapyRQkXmOwr-AG3d&export=download"
 
-LINGO_JUDGE = "Lingo-Judge"
+LINGO_JUDGE = "wayveai/Lingo-Judge"
 
 class Keys(str, Enum):
     question_id = "question_id"
