@@ -34,7 +34,6 @@ def evaluate(predictions_path: str) -> float:
     dataset_evaluated = dataset.map(partial(evaluate_question, judge))
     dataset_filtered = dataset_evaluated.filter(select_correct)
 
-    print("Filtered dataset:", dataset_filtered)
     benchmark_score = dataset_filtered.num_rows/dataset_evaluated.num_rows
     print(f"The overall benchmark score is {benchmark_score*100}%")
     return benchmark_score
