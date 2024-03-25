@@ -25,11 +25,16 @@ def evaluate(predictions_path: str, batch_size: int) -> float:
     references = references[[Keys.question_id, Keys.segment_id, Keys.question, Keys.answer]]
     references = references.groupby([Keys.question_id, Keys.segment_id, Keys.question]).agg(list)
     references = references.rename({Keys.answer: Keys.references}, axis=1)
+    print(f"Loaded {len(references)} references.")
 
     predictions = pd.read_csv(predictions_path)
     predictions = predictions.rename({Keys.answer: Keys.prediction}, axis=1)
+    print(f"Loaded {len(predictions)} predictions.")
      
     merged = pd.merge(predictions, references, on=[Keys.question_id, Keys.segment_id])
+    print(f"Matched {len(merged)} predictions with references.")
+    if len(merged) != 500:
+        print("WARNING! You are evaluating on a subset of the LingoQA benchmark. Please check your input file for missing or mis-matched examples.")
 
     dataset = Dataset.from_pandas(merged)
 
