@@ -17,20 +17,20 @@ class LingoJudge(nn.Module):
         self.model = AutoModelForSequenceClassification.from_pretrained(pretrained_model).eval()
 
     @torch.inference_mode()
-    def forward(self, questions: List[str], references: List[str], predictions: List[str]):
+    def forward(self, question: str, references: List[str], prediction: str):
         """
-        Inference function for textual classifier. Batch processing for faster inference.
+        Inference function for textual classifier with multiple reference answers. 
         Args:
-            questions: List of input questions.
+            question: Input question.
             references: List of references.
-            predictions: List of model predictions.
+            prediction: Model prediction.
         Output:
             scores: Score indicating truthfulness.
         """
         device = next(self.parameters()).device
         texts = [
-            f"{self.tokenizer.cls_token}\nQuestion: {q}\nAnswer: {a_gt}\nStudent: {a_pred}"
-            for q, a_gt, a_pred in zip(questions, references, predictions)
+            f"{self.tokenizer.cls_token}\nQuestion: {question}\nAnswer: {a_gt}\nStudent: {prediction}"
+            for a_gt in references
         ]
         encoded_input = self.tokenizer(texts, return_tensors='pt', padding=True, truncation=True, max_length=128)
         encoded_input = {k: v.to(device) for k, v in encoded_input.items()}
