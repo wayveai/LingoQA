@@ -44,9 +44,9 @@ The LingoQA training and evaluation datasets contain:
 
 | Datset                    | Split  | Videos | QA Pairs | QA Per Scenario |            Link         |
 |---------------------------|--------|--------|----------|-----------------|-------------------------|
-| Scenery                   | Train  |  3.5k  |  267.8k  |     ~10.9       |   https://drive.google.com/drive/folders/1ivYF2AYHxDQkX5h7-vo7AUDNkKuQz_fL/scenery   |
-| Action                    | Train  | 24.5k  |  152.5k  |     ~43.6       |   https://drive.google.com/drive/folders/1ivYF2AYHxDQkX5h7-vo7AUDNkKuQz_fL/action   |
-| Evaluation                | Test   |   100  |   1000   |       10        |   https://drive.google.com/drive/folders/1ivYF2AYHxDQkX5h7-vo7AUDNkKuQz_fL/evaluation   |
+| Scenery                   | Train  |  3.5k  |  267.8k  |     ~10.9       |   [https://drive.google.com/drive/folders/1ivYF2AYHxDQkX5h7-vo7AUDNkKuQz_fL/scenery](https://drive.google.com/drive/folders/1GiwWGfrM8pO27CYLu_9Uwtdcz0JoqHr7)   |
+| Action                    | Train  | 24.5k  |  152.5k  |     ~43.6       |   [https://drive.google.com/drive/folders/1ivYF2AYHxDQkX5h7-vo7AUDNkKuQz_fL/action](https://drive.google.com/drive/folders/1QQqBrR3uGDC05Zc11zMeui6Zzl7RvFZg)   |
+| Evaluation                | Test   |   100  |   1000   |       10        |  [https://drive.google.com/drive/folders/1ivYF2AYHxDQkX5h7-vo7AUDNkKuQz_fL/evaluation](https://drive.google.com/drive/folders/1oA7W8-Ej_uJEuUxZIjPP5K8hQGGzYsPq)   |
 
 
 ## Evaluation Metric <a name="dataset"></a> 
