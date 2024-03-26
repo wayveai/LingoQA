@@ -10,7 +10,7 @@ from judge import LingoJudge
 
 @click.command()
 @click.option('--predictions_path', help='Path to predictions file.')
-@click.option('--batch_size', help='Batch size for evaluation.', default=2)
+@click.option('--batch_size', help='Batch size for evaluation.', default=1)
 def evaluate(predictions_path: str, batch_size: int) -> float:
     """
     Simple script for running evaluation on the LingoQA benchmark.
@@ -49,11 +49,11 @@ def evaluate(predictions_path: str, batch_size: int) -> float:
 
 def evaluate_question(metric: LingoJudge, data_dict: dict) -> dict:
     """
-    Run evaluation for one question.
+    Run evaluation for a batch of questions.
 
     Args:
         metric: the evaluation metric for computing the scores.
-        data_dict: the data dictionary containing a question, a reference, and a prediction.
+        data_dict: the data dictionary containing questions, references, and predictions.
 
     Out:
         data_dict: updated data dictionary containing information such as
@@ -65,6 +65,7 @@ def evaluate_question(metric: LingoJudge, data_dict: dict) -> dict:
     prediction = data_dict[Keys.prediction]
 
     scores = metric.compute(questions, references, prediction)
+
     data_dict[Keys.score] = scores
     data_dict[Keys.probability] = torch.sigmoid(scores)
     data_dict[Keys.correct] = scores > 0.0

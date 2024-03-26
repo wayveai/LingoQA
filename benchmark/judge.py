@@ -41,10 +41,10 @@ class LingoJudge(nn.Module):
 
     def compute(self, questions: List[str], references: List[str], predictions: List[str]):
         """
-        Compute maximum classifier metric. For multiple reference answers, select the highest one.
+        Compute maximum classifier metric. For multiple reference answers, selects the highest one.
         Args:
             questions: List of input questions.
-            references: List of references.
+            references: List of references, with multiple references per question supported.
             predictions: List of model predictions.
         Output:
             scores: Score indicating truthfulness. 
