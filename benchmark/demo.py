@@ -1,4 +1,4 @@
-# Demo for using the Judge directly from Hugging Face
+# Demo for using the Lingo-Judge directly from Hugging Face
 from transformers import pipeline
 
 # Define the model name to be used in the pipeline
