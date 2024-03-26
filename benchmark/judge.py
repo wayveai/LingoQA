@@ -32,6 +32,7 @@ class LingoJudge(nn.Module):
             f"{self.tokenizer.cls_token}\nQuestion: {question}\nAnswer: {a_gt}\nStudent: {prediction}"
             for a_gt in references
         ]
+
         encoded_input = self.tokenizer(texts, return_tensors='pt', padding=True, truncation=True, max_length=128)
         encoded_input = {k: v.to(device) for k, v in encoded_input.items()}
         output = self.model(**encoded_input)

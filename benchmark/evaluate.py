@@ -10,12 +10,14 @@ from judge import LingoJudge
 
 @click.command()
 @click.option('--predictions_path', help='Path to predictions file.')
-def evaluate(predictions_path: str) -> float:
+@click.option('--batch_size', help='Batch size for evaluation.', default=2)
+def evaluate(predictions_path: str, batch_size: int) -> float:
     """
     Simple script for running evaluation on the LingoQA benchmark.
 
     Args:
         predictions_path: path to a .csv file containing the model predictions.
+        batch_size: batch size for speeding up computation.
     Out:
         benchmark_score: evaluation score obtained from running the textual classifier on the benchmark.
     """
@@ -37,7 +39,7 @@ def evaluate(predictions_path: str) -> float:
     dataset = Dataset.from_pandas(merged)
 
     judge = LingoJudge().eval().to("cuda:0")
-    dataset_evaluated = dataset.map(partial(evaluate_question, judge), batched=True)
+    dataset_evaluated = dataset.map(partial(evaluate_question, judge), batched=True, batch_size=batch_size)
     dataset_filtered = dataset_evaluated.filter(select_correct)
 
     benchmark_score = dataset_filtered.num_rows/dataset_evaluated.num_rows
@@ -61,8 +63,6 @@ def evaluate_question(metric: LingoJudge, data_dict: dict) -> dict:
     questions = data_dict[Keys.question]
     references = data_dict[Keys.references]
     prediction = data_dict[Keys.prediction]
-
-    assert len(data_dict[Keys.references]) > 1 and isinstance(data_dict[Keys.references], list), f"Expected a list of more than one reference answer per question, but got: {data_dict[Keys.references]}"
 
     scores = metric.compute(questions, references, prediction)
     data_dict[Keys.score] = scores
