@@ -1,0 +1,9 @@
+sentencepiece==0.1.97
+pytorch-lightning==2.1.2
+transformers==4.36.2
+datasets==2.16.1
+pandas==2.0.3
+protobuf==4.25.1
+StrEnum==0.4.15
+click==8.1.7
+tqdm==4.66.1
