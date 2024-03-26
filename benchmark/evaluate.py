@@ -17,7 +17,7 @@ def evaluate(predictions_path: str, batch_size: int) -> float:
 
     Args:
         predictions_path: path to a .csv file containing the model predictions.
-        batch_size: batch size for speeding up computation.
+        batch_size: batch size for evaluation.
     Out:
         benchmark_score: evaluation score obtained from running the textual classifier on the benchmark.
     """
