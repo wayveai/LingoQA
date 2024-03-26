@@ -30,7 +30,8 @@ To run the LingoQA benchmark on your predictions, simply install the requirement
 pip install -r ./requirements.txt
 ```
 
-Export the predictions of your model to a .csv file and then run them as such:
+Export the predictions of your model to a ```predictions.csv``` file with the columns ```question_id```, ```segment_id``` and ```answer``` corresponding to the [evaluation dataset](https://drive.google.com/drive/folders/1ivYF2AYHxDQkX5h7-vo7AUDNkKuQz_fL/evaluation).
+You should have 500 answers in the file. Subsequently, run the benchmark using the following command:
 
 ```
 python ./benchmark/evaluate.py --predictions_path ./path_to_predictions/predictions.csv
