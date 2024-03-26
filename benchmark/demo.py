@@ -1,5 +1,6 @@
-# Import necessary libraries
+# Demo for using the Judge directly from Hugging Face
 from transformers import pipeline
+
 # Define the model name to be used in the pipeline
 model_name = 'wayveai/Lingo-Judge'
 # Define the question and its corresponding answer and prediction
