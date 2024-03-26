@@ -19,7 +19,7 @@ class LingoJudge(nn.Module):
     @torch.inference_mode()
     def forward(self, question: str, references: List[str], prediction: str):
         """
-        Inference function for textual classifier with multiple reference answers. 
+        Inference function for textual classifier with multiple reference answers.
         Args:
             question: Input question.
             references: List of references.
@@ -39,12 +39,12 @@ class LingoJudge(nn.Module):
         scores = output.logits.squeeze(-1)
         return scores
 
-    def compute(self, questions: List[str], references: List[str], predictions: List[str]):
+    def compute(self, questions: List[str], references: List[List[str]], predictions: List[str]):
         """
         Compute maximum classifier metric. For multiple reference answers, selects the highest one.
         Args:
             questions: List of input questions.
-            references: List of references, with multiple references per question supported.
+            references: List of lists, with multiple references per question supported.
             predictions: List of model predictions.
         Output:
             scores: Score indicating truthfulness. 
