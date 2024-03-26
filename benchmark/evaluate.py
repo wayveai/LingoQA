@@ -10,14 +10,12 @@ from judge import LingoJudge
 
 @click.command()
 @click.option('--predictions_path', help='Path to predictions file.')
-@click.option('--batch_size', help='Batch size to use for processing.', type=int)
-def evaluate(predictions_path: str, batch_size: int) -> float:
+def evaluate(predictions_path: str) -> float:
     """
     Simple script for running evaluation on the LingoQA benchmark.
 
     Args:
         predictions_path: path to a .csv file containing the model predictions.
-        batch_size: batch size to speed up processing.
     Out:
         benchmark_score: evaluation score obtained from running the textual classifier on the benchmark.
     """
@@ -39,7 +37,7 @@ def evaluate(predictions_path: str, batch_size: int) -> float:
     dataset = Dataset.from_pandas(merged)
 
     judge = LingoJudge().eval().to("cuda:0")
-    dataset_evaluated = dataset.map(partial(evaluate_question, judge), batched=True, batch_size=batch_size)
+    dataset_evaluated = dataset.map(partial(evaluate_question, judge), batched=True)
     dataset_filtered = dataset_evaluated.filter(select_correct)
 
     benchmark_score = dataset_filtered.num_rows/dataset_evaluated.num_rows

@@ -1,9 +1,10 @@
 import torch
 from torch import nn
 
+from tqdm import trange
 from typing import List
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
-from constants import LINGO_JUDGE
+from constants import LINGO_JUDGE, Keys
 
 
 class LingoJudge(nn.Module):
