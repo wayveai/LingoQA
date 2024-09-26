@@ -1,14 +1,9 @@
 ![banner](assets/banner.png)
 
 
-Official GitHub repository for "LingoQA: Video Question Answering for Autonomous Driving", presenting the LingoQA benchmark, dataset and baseline model for autonomous driving Video Question Answering (VQA). 
+[ECCV 2024] Official GitHub repository for "LingoQA: Visual Question Answering for Autonomous Driving", presenting the LingoQA benchmark, dataset and baseline model for autonomous driving Visual Question Answering (VQA). 
 
-
-# LingoQA: Video Question Answering for Autonomous Driving
->
->Ana-Maria Marcu, Long Chen, Jan Hünermann, Alice Karnsund, Benoit Hanotte, Prajwal Chidananda, Saurabh Nair, Vijay Badrinarayanan, Alex Kendall, Jamie Shotton, Oleg Sinavski
->
->[[preprint]](https://github.com/wayveai/LingoQA/blob/main/assets/preprint.pdf)[[arxiv]](https://arxiv.org/abs/2312.14115)
+[[preprint]](https://github.com/wayveai/LingoQA/blob/main/assets/preprint.pdf)[[arxiv]](https://arxiv.org/abs/2312.14115)[[huggingface]](https://huggingface.co/papers/2312.14115)
 
 
 ## Overview <a name="overview"></a> 
@@ -19,9 +14,9 @@ In this repository you will find:
 - Details about how to download the datasets
 - An example of how to run the novel evaluation metric, Lingo-Judge
 
-## 3-minute summary <a name="summary"></a> 
+## 5-minute summary <a name="summary"></a> 
 
-[<img src="assets/thumbnail.png" width="100%">](https://www.canva.com/design/DAF-vlMT8vo/X7ynk_nv52t7jE7UpKlRBg/watch?utm_content=DAF-vlMT8vo&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+[<img src="assets/thumbnail.png" width="100%">](https://www.canva.com/design/DAF-vlMT8vo/X7ynk_nv52t7jE7UpKlRBg/view?utm_content=DAF-vlMT8vo&utm_campaign=designshare&utm_medium=link&utm_source=recording_view)
 
 ## Benchmark
 To run the LingoQA benchmark on your predictions, simply install the requirements for the repository:
@@ -85,7 +80,7 @@ If you find our work useful in your research, please consider citing:
 
 ```bibtex
 @article{marcu2023lingoqa,
-  title={LingoQA: Video Question Answering for Autonomous Driving}, 
+  title={LingoQA: Visual Question Answering for Autonomous Driving}, 
   author={Ana-Maria Marcu and Long Chen and Jan Hünermann and Alice Karnsund and Benoit Hanotte and Prajwal Chidananda and Saurabh Nair and Vijay Badrinarayanan and Alex Kendall and Jamie Shotton and Oleg Sinavski},
   journal={arXiv preprint arXiv:2312.14115},
   year={2023},
