@@ -3,7 +3,7 @@
 
 [ECCV 2024] Official GitHub repository for "LingoQA: Video Question Answering for Autonomous Driving", presenting the LingoQA benchmark, dataset and baseline model for autonomous driving Video Question Answering (VQA). 
 
-[[preprint]](https://github.com/wayveai/LingoQA/blob/main/assets/preprint.pdf)[[arxiv]](https://arxiv.org/abs/2312.14115)
+[[preprint]](https://github.com/wayveai/LingoQA/blob/main/assets/preprint.pdf)[[arxiv]](https://arxiv.org/abs/2312.14115)[[huggingface]](https://huggingface.co/papers/2312.14115)
 
 
 ## Overview <a name="overview"></a> 
