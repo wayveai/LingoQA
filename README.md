@@ -1,7 +1,7 @@
 ![banner](assets/banner.png)
 
 
-Official GitHub repository for "LingoQA: Video Question Answering for Autonomous Driving", presenting the LingoQA benchmark, dataset and baseline model for autonomous driving Video Question Answering (VQA). 
+[ECCV 2024] Official GitHub repository for "LingoQA: Video Question Answering for Autonomous Driving", presenting the LingoQA benchmark, dataset and baseline model for autonomous driving Video Question Answering (VQA). 
 
 
 # LingoQA: Video Question Answering for Autonomous Driving
