@@ -14,7 +14,7 @@ In this repository you will find:
 - Details about how to download the datasets
 - An example of how to run the novel evaluation metric, Lingo-Judge
 
-## 3-minute summary <a name="summary"></a> 
+## 5-minute summary <a name="summary"></a> 
 
 [<img src="assets/thumbnail.png" width="100%">](https://www.canva.com/design/DAF-vlMT8vo/X7ynk_nv52t7jE7UpKlRBg/view?utm_content=DAF-vlMT8vo&utm_campaign=designshare&utm_medium=link&utm_source=recording_view)
 
